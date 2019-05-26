@@ -14,7 +14,7 @@ def setup(request):
 
 def test1(setup):
     """First test."""
-    assert True
+    assert False
 
 def test2():
     """Second test."""
