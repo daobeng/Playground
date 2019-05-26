@@ -25,4 +25,3 @@ def test_throws_exception_with_bad_file(mock_open, monkeypatch):
     monkeypatch.setattr('os.path.exists', mock_exists)
     with pytest.raises(Exception):
         result = read_from_file('blah')
-
