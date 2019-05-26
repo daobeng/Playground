@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "pytest",
+    "test": "pytest --cov=src tests/",
     "lint": "pycodestyle .",
     "hook-add": "npx prepush install",
     "hook-remove": "npx prepush remove"
