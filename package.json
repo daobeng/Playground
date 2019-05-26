@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "pycodestyle .",
-    "hook-add": "prepush install",
-    "hook-remove": "prepush remove"
+    "hook-add": "npx prepush install",
+    "hook-remove": "npx prepush remove"
   },
   "prepush": [
     "npm run lint --silent"
