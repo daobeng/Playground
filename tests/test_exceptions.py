@@ -5,4 +5,4 @@ def test_float():
 
 def test_exception():
     with raises(ValueError):
-      raise ValueError
+        raise ValueError

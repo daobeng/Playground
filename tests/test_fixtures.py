@@ -16,7 +16,7 @@ def setup_class():
 def setup_function():
     print('Setting up function')
 
-@pytest.fixture(scope='function', params=[1,2])
+@pytest.fixture(scope='function', params=[1, 2])
 def setup_function(request):
     print('Setting up function')
     return request.param
