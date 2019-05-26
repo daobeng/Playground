@@ -9,8 +9,8 @@
     "hook-add": "prepush install",
     "hook-remove": "prepush remove"
   },
-  "pre-push": [
-    "lint"
+  "prepush": [
+    "npm run lint --silent"
   ],
   "author": "",
   "license": "ISC",
