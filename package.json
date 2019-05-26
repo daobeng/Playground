@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "pytest",
     "lint": "pycodestyle .",
     "hook-add": "npx prepush install",
     "hook-remove": "npx prepush remove"
   },
   "prepush": [
-    "npm run lint --silent"
+    "npm run lint --silent",
+    "npm run test --silent"
   ],
   "author": "",
   "license": "ISC",
